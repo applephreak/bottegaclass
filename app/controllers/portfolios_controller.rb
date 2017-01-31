@@ -45,13 +45,13 @@ class PortfoliosController < ApplicationController
 
   def update
     
-    
     if @portfolio_item.update(portfolio_params)
       redirect_to @portfolio_item
     else
       render :edit
     end
   end
+end
 
   def destroy
     @portfolio_item =Portfolio.find(params[:id])
@@ -69,10 +69,11 @@ class PortfoliosController < ApplicationController
    params.require(:portfolio).permit(:title, 
                                     :subtitle, 
                                     :body,
-                                    :image,
+                                    :main_image,
+                                    :thumb_image,
                                     technologies_attributes: [:name]
                                     )
 
     
    end
- end
+ 
