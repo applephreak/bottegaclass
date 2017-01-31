@@ -38,12 +38,13 @@
 
 
  <div class="form-group">
-    <%= f.fields_for :technologies do |tech_form| %>
-    <div>
-    <%= tech_form.label :name %>
-    <%= tech_form.text_field :name, class: 'form-control' %>
-    </div>
+    <%= f.fields_for :technologies do |technology_form| %>
+      <%= render 'technology_fields', f: technology_form %>
     <% end %>
+  </div>
+  <div>
+    
+    <%= link_to_add_association 'Add Techonoloy', f, :technologies %>
   </div>
 
 
