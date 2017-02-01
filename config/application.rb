@@ -19,6 +19,6 @@ Bundler.require(*Rails.groups)
 
 module HtmlWeekOne
   class Application < Rails::Application
-   
-  end
+    config.eager_load_paths << "#{Rails.root}/lib"
+   end
 end
