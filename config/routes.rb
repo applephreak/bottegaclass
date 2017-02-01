@@ -5,16 +5,11 @@ Rails.application.routes.draw do
   resources :portfolios, except: [:show] do
     put :sort, on: :collection
 end
-    
-
-
-
-    
     root to: 'page#home'    
     
     get 'about_me', to: 'page#about'
     get 'contact', to: 'page#contact' 
-    
+    get 'tech-news', to: 'page#tech_news'
 
     resources :blogs do
      member do
