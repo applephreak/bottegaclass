@@ -10,6 +10,11 @@
 
     <meta name="Keywords" content="<%= @seo_keywords %>" />
 
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+
+    <%= favicon_link_tag 'favicons/other_favicon.ico' %>
+
     
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -44,8 +49,6 @@
 
         <%= alerts %>
       
-
-        <%= source_helper("application") %>
       </div>
     </div>
   </div>
