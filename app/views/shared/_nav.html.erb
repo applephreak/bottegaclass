@@ -1,9 +1,11 @@
 <div class="<%=location%>">
 
-<div>
-<%= link_to "Home", root_path %>
-<%= link_to "About", about_me_path %>
-<%= link_to "Contact", contact_path %>
-<%= link_to "Blog", blogs_path %>
-<%= link_to "Portfolios", portfolios_path %>
+<ul class="breadcrumb">
+<li><%= link_to "Home ", root_path %></li>
+<li><%= link_to "About ", about_me_path %></li>
+<li><%= link_to "Contact ", contact_path %></li>
+<li><%= link_to "Blog ", blogs_path %></li>
+<li><%= link_to "Portfolios", portfolios_path %></li>
+<li>2017</li>
+</ul>
 </div>
