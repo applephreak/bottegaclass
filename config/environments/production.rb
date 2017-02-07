@@ -85,6 +85,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_cable.allowed_request_origins = ['https://html-week-one.herokuapp.com/', 'http://html-week-one.herokuapp.com/']
-  config.action_cable.url = "wss://html-week-one.herokuapp.com/cable"
+  config.action_cable.url = "ws://html-week-one.herokuapp.com/cable"
 
 end
