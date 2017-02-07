@@ -1,4 +1,31 @@
-Topic.create!(title: "ASDASD")
+User.create!(
+   email: "Austyntravis9@gmail.com",  
+   password: "asdf1234",
+   password_confirmation:"asdf1234",
+   name: "Admin User",
+   roles: "site_admin"
+   )
+
+   puts "1 Admin user created"
+
+User.create!( 
+   email: "test@test,com",   
+   password: "asdf123$",
+   password_confirmation:"asdf123$",
+   name: "Admin User"
+   )
+
+   puts "1 Regular User created"
+
+
+
+3.times do |topic|
+   Topic.create!(
+      title: "Topic #{topic}"
+      )
+end
+
+puts "3 Topics"
 
 
 10.times do |blog|
@@ -32,4 +59,3 @@ end
 
 puts "9 portfolio items created"
 
-User.create!(email: "Austyntravis9@gmail.com", name: "Austyn", password: "asdf1234", password_confirmation: "asdf1234", roles: :site_admin)
