@@ -1,24 +1,23 @@
-<h1>About me!</h1>
-config.assets.initialize_on_precompile = false
-<%= stylesheet_link_tag "about.scss" %>
+<div class="app-card-container">
+    <div class="card">
+      <h1>About me!</h1>
 
-<hr>
+      <hr>
+      
+      <div class="row">
+      <div cass="col-md-4">
+        <%= image_tag "profile.jpg", width:300, alt: "profile image", class: 'profile-img'  %>
+      </div>
 
-<body>
-<div class="row">
-  <div cass="col-md-4">
-    <%= image_tag "profile.jpg", width:300, alt: "profile image"  %>
-    
+      <div cass="col-md-8">
+        <p>Hi, My name is Caelen Austyn Travis, I like to go by Austyn. I was born in Malaysia kuala lumpur, I am 22 years old and currently living in utah. I use to work in Collections until I decided to go to school. I quit my full time job to decate my life to learning to code. </p>
+      </div>
     </div>
-  <div cass="col-md-8">
-    <p>Hi, My name is Caelen Austyn Travis, I like to go by Austyn. I was born in Malaysia kuala lumpur, I am 22 years old and currently living in utah. I use to work in Collections until I decided to go to school. I quit my full time job to decate my life to learning to code. </p>
-
-
   </div>
-  
-
 </div>
 
-</body>
+
+
+
 
 
